@@ -25,7 +25,7 @@
 
   MESSAGES.push({
     delay: 4500,
-    text: "Cargando proyecto: Hyphen X"
+    text: "Cargando proyecto..."
   });
 
   MESSAGES.push({
