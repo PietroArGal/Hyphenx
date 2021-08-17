@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Hyphenx</title>
+  <meta name="description" content="A revolutionary tech company."/>
+  <meta name="keywords" content="hyphenx, Hyphenx, HYPHENX, Tech, Peru"/>
+  <meta name="author" content="Pietro Aramburú" />
+  <meta name="copyright" content="Gerard Altamirano & Pietro Aramburú" />
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="shortcut icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
