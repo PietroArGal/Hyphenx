@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>asd</title>
+  <title>Hyphen X</title>
   <style>
     body {
       overflow: hidden;
