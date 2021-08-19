@@ -30,22 +30,22 @@
 
   MESSAGES.push({
     delay: 5600,
-    text: "20%.."
+    text: "30%.."
   });
 
   MESSAGES.push({
     delay: 6100,
-    text: "40%..."
+    text: "60%..."
   });
 
   MESSAGES.push({
     delay: 7000,
-    text: "75%...."
+    text: "85%...."
   });
 
   MESSAGES.push({
     delay: 8150,
-    text: "Fallo crítico: Faltan 15 días para generar el sistema."
+    text: "Fallo crítico: Falta 1 día para generar el sistema."
   });
 
   $container = $("#container");
