@@ -1383,7 +1383,7 @@
 							<div class="layer" data-depth="0.40"><span>+</span></div>
 						</div>
 						<p>Conoce nuestros <strong>proyectos estudiantiles</strong></p>
-						<div class="btn"> <a href="ons-werk/index.html"><span>Aprende con Hyphenx</span></a></div>
+						<div class="btn"> <a href="specialiteiten/index.html"><span>Aprende con Hyphenx</span></a></div>
 					</div>
 				</div>
 				<div class="shapes-bg-bottom" data-bottom-top="transform:translateY(0px);"
