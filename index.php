@@ -750,7 +750,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="description" content="Hyphenx its a tech solutions company" />
 
-	<link rel="canonical" href="index.html" />
+	<link rel="canonical" href="index.php" />
 
 	<meta property="og:locale" content="es_ES" />
 	<meta property="og:type" content="website" />
@@ -957,13 +957,13 @@
 
 	<script type='text/javascript' src='wp-content/plugins/cookie-notice/js/front.minfe9e.js?ver=1.2.44'></script>
 
-	<link rel='https://api.w.org/' href='wp-json/index.html' />
+	<link rel='https://api.w.org/' href='wp-json/index.php' />
 	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
 	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
 
 	<meta name="generator" content="WordPress 4.9.8" />
 
-	<link rel='shortlink' href='index.html' />
+	<link rel='shortlink' href='index.php' />
 	<link rel="icon" href="wp-content/uploads/2018/10/cropped-B-32x32.jpg" sizes="32x32" />
 	<link rel="icon" href="wp-content/uploads/2018/10/cropped-B-192x192.jpg" sizes="192x192" />
 	<link rel="apple-touch-icon-precomposed" href="wp-content/uploads/2018/10/cropped-B-180x180.jpg" />
@@ -1060,7 +1060,7 @@
 					
 					<li id="menu-item-283"
 						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-283">
-						<a href="index.html">Inicio</a></li>
+						<a href="index.php">Inicio</a></li>
 
 						<li id="menu-item-287"
 						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-287"><a
@@ -1501,7 +1501,7 @@
 		</div>
 		<footer class="site-footer">
 			<div class="header-wrp">
-				<div class="site-logo"> <a href="index.html"></a></div>
+				<div class="site-logo"> <a href="index.php"></a></div>
 				<div class="mobile-nav-btn"> <span></span> <span></span> <span></span></div>
 			</div>
 			
