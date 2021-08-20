@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<title>Hyphenx</title>
+
+	<style id="rocket-critical-css">
+		#cookie-notice {
+			display: block;
+			visibility: hidden;
+			position: fixed;
+			min-width: 100%;
+			height: auto;
+			z-index: 100000;
+			font-size: 13px;
+			line-height: 20px;
+			left: 0;
+			text-align: center
+		}
+
+		.cn-bottom {
+			bottom: 0
+		}
+
+		.cookie-notice-container {
+			padding: 10px;
+			text-align: center;
+			width: 100%
+		}
+
+		.cn-button.wp-default {
+			box-shadow: none;
+			text-decoration: none
+		}
+
+		#cookie-notice .cn-button {
+			margin-left: 10px
+		}
+
+		.cn-button.wp-default {
+			font-family: sans-serif;
+			line-height: 18px;
+			padding: 2px 12px;
+			background: linear-gradient(to bottom, #FEFEFE, #F4F4F4) repeat scroll 0 0 #F3F3F3;
+			border-color: #BBB;
+			color: #333;
+			text-shadow: 0 1px 0 #FFF;
+			box-sizing: border-box;
+			border-radius: 3px 3px 3px 3px;
+			border-style: solid;
+			border-width: 1px;
+			display: inline-block;
+			font-size: 12px;
+			font-style: normal;
+			text-decoration: none;
+			white-space: nowrap;
+			outline: none
+		}
+
+		* {
+			padding: 0;
+			margin: 0 auto;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box
+		}
+
+		html {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box
+		}
+
+		body {
+			font-family: proxima-nova, sans-serif;
+			font-size: 14px;
+			color: #212121;
+			background-color: #F0F0F0;
+			animation: bugfix infinite 1s;
+			position: relative;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale
+		}
+
+		a {
+			outline: none;
+			text-decoration: none;
+			color: #212121
+		}
+
+		#wrapper {
+			width: 100%;
+			height: auto;
+			overflow: hidden;
+			position: relative
+		}
+
+		.cf:before,
+		.cf:after {
+			content: " ";
+			display: table
+		}
+
+		.cf:after {
+			clear: both
+		}
+
+		.cf {
+			*zoom: 1
+		}
+
+		.inner {
+			max-width: 100%;
+			position: relative
+		}
+
+		.btn a {
+			font-size: 14px;
+			line-height: 28px;
+			font-weight: 700;
+			display: inline-block;
+			background-color: #06F7E4;
+			border-radius: 30px;
+			padding: 9px 28px 8px 28px;
+			border-bottom: 3px solid #0BC6B7;
+			-webkit-box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .13);
+			-moz-box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .13);
+			box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .13)
+		}
+
+		.contact-btn a {
+			width: 45px;
+			height: 45px;
+			border-radius: 50%;
+			display: block;
+			position: relative;
+			background-color: #06F7E4;
+			border-bottom: 3px solid #0BC6B7;
+			-webkit-box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .13);
+			-moz-box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .13);
+			box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .13)
+		}
+
+		.contact-btn a::before {
+			content: '';
+			display: block;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center center;
+			margin: 0 auto;
+			position: relative;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			transform: translateY(-50%)
+		}
+
+		.contact-btn.phone a::before {
+			width: 13px;
+			height: 20px;
+			background-image: url(../wp-content/themes/Basecamp/images/contact-icon-phone-black.png)
+		}
+
+		.contact-btn.location a::before {
+			width: 16px;
+			height: 24px;
+			background-image: url(http://bscmp.nl/wp-content/themes/Basecamp/images/contact-icon-location-black.png)
+		}
+
+		strong {
+			font-weight: 800
+		}
+
+		#parallax-area {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0
+		}
+
+		.site-header {
+			width: 100%;
+			height: auto;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 10000;
+			padding: 52px 60px 0
+		}
+
+		.site-logo {
+			width: 20px;
+			height: 31px;
+			background-image: url(../wp-content/themes/Basecamp/images/bscmp.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center center;
+			float: left
+		}
+
+		.site-logo a {
+			width: 100%;
+			height: 100%;
+			display: block
+		}
+
+		.mobile-nav-btn {
+			width: 22px;
+			height: 15px;
+			position: relative;
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+			float: right
+		}
+
+		.mobile-nav-btn span {
+			display: block;
+			position: absolute;
+			height: 2px;
+			width: 100%;
+			background: #000;
+			border-radius: 0;
+			opacity: 1;
+			left: 0;
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg)
+		}
+
+		.mobile-nav-btn span:nth-child(1) {
+			top: 0;
+			-webkit-transform-origin: left center;
+			-moz-transform-origin: left center;
+			-o-transform-origin: left center;
+			transform-origin: left center
+		}
+
+		.mobile-nav-btn span:nth-child(2) {
+			top: 6px;
+			-webkit-transform-origin: left center;
+			-moz-transform-origin: left center;
+			-o-transform-origin: left center;
+			transform-origin: left center
+		}
+
+		.mobile-nav-btn span:nth-child(3) {
+			top: 12px;
+			-webkit-transform-origin: left center;
+			-moz-transform-origin: left center;
+			-o-transform-origin: left center;
+			transform-origin: left center
+		}
+
+		.show-items .site-header {
+			visibility: visible;
+			opacity: 1
+		}
+
+		.header-wrp {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			padding: 52px 60px 0;
+			z-index: 10000;
+			visibility: hidden;
+			opacity: 0
+		}
+
+		.loaded .header-wrp {
+			visibility: visible;
+			opacity: 1
+		}
+
+		.header-wrp .site-logo {
+			background-image: url(../wp-content/themes/Basecamp/images/bscmp.png)
+		}
+
+		.header-wrp .mobile-nav-btn span {
+			background-color: #fff
+		}
+
+		.navigation-wrap {
+			position: fixed;
+			top: 0;
+			height: 100%;
+			z-index: 9999;
+			right: -100%
+		}
+
+		.navigation-wrap::before {
+			content: '';
+			position: absolute;
+			top: -637px;
+			left: -431px;
+			width: 1259px;
+			height: 1600px;
+			background-color: #06F7E4;
+			transform: rotate(46deg);
+			visibility: hidden;
+			opacity: 0;
+			-webkit-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .11);
+			-moz-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .11);
+			box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .11)
+		}
+
+		.navigation-wrap .nav-container {
+			width: 448px;
+			height: 100%;
+			overflow-y: auto;
+			background-color: #06F7E4;
+			padding-left: 35px;
+			padding-right: 20px;
+			position: relative
+		}
+
+		.navigation-wrap .nav-container .site-navigation {
+			padding-top: 138px;
+			margin-bottom: 48px
+		}
+
+		.navigation-wrap .nav-container .site-navigation li {
+			list-style: none;
+			font-size: 40px;
+			line-height: 50px;
+			font-weight: 800;
+			color: #212121;
+			letter-spacing: -.025em;
+			text-shadow: 0 30px 20px rgba(0, 0, 0, .16);
+			margin-bottom: 3px
+		}
+
+		.navigation-wrap .nav-container .site-navigation li a {
+			display: inline-block;
+			color: #212121
+		}
+
+		.navigation-wrap .nav-container .btns-wrap {
+			width: 100%;
+			height: auto
+		}
+
+		.navigation-wrap .nav-container .btns-wrap::after {
+			content: '';
+			display: table;
+			clear: both
+		}
+
+		.navigation-wrap .nav-container .btns-wrap .btn {
+			float: left;
+			margin-right: 15px
+		}
+
+		.navigation-wrap .nav-container .btns-wrap .btn a {
+			background-color: #fff;
+			border-bottom: 3px solid #D2D2D2
+		}
+
+		.navigation-wrap .nav-container .btns-wrap .contact-btns {
+			float: left
+		}
+
+		.navigation-wrap .nav-container .btns-wrap .contact-btns .contact-btn {
+			float: left;
+			margin-right: 15px
+		}
+
+		.navigation-wrap .nav-container .btns-wrap .contact-btns .contact-btn:last-child {
+			margin-right: auto
+		}
+
+		.navigation-wrap .nav-container .btns-wrap .contact-btns .contact-btn a {
+			background-color: #fff;
+			border-bottom: 3px solid #D2D2D2
+		}
+
+		.navigation-wrap .nav-container .btns-wrap .contact-info {
+			width: 100%;
+			height: auto;
+			float: left;
+			padding-top: 40px;
+			padding-bottom: 40px
+		}
+
+		.navigation-wrap .nav-container .btns-wrap .contact-info ul li {
+			list-style: none;
+			font-size: 14px;
+			line-height: 22px;
+			font-weight: 700
+		}
+
+		.navigation-wrap .nav-container .btns-wrap .contact-info ul li a {
+			display: inline-block;
+			font-weight: 300
+		}
+
+		.navigation-wrap .nav-container .btns-wrap .contact-info ul li.address {
+			font-weight: 300;
+			margin-bottom: 22px
+		}
+
+		.navigation-wrap .nav-container .btns-wrap .contact-info .social-links {
+			width: 100%;
+			overflow: hidden;
+			text-align: left;
+			font-size: 0;
+			padding-top: 30px
+		}
+
+		.navigation-wrap .nav-container .btns-wrap .contact-info .social-links .social-link {
+			width: 24px;
+			height: 24px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center center;
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 10px
+		}
+
+		.navigation-wrap .nav-container .btns-wrap .contact-info .social-links .social-link:last-child {
+			margin-right: 0
+		}
+
+		.navigation-wrap .nav-container .btns-wrap .contact-info .social-links .social-link a {
+			width: 100%;
+			height: 100%;
+			display: block
+		}
+
+		.nav-overlay {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: transparent;
+			display: none;
+			z-index: 9998
+		}
+
+		.site-main {
+			width: 100%;
+			height: auto;
+			position: relative
+		}
+
+		.site-main.gap-top {
+			padding-top: 100px
+		}
+
+		.shapes-wrap {
+			transform: translate3d(0, 0, 0);
+			-webkit-transform: translate3d(0, 0, 0);
+			transform-style: preserve-3d;
+			-webkit-transform-style: preserve-3d;
+			backface-visibility: hidden;
+			-webkit-backface-visibility: hidden;
+			visibility: hidden;
+			opacity: 0
+		}
+
+		.loaded .shapes-wrap {
+			visibility: visible;
+			opacity: 1
+		}
+
+		.site-main .default-shapes-bg {
+			position: absolute;
+			left: 0;
+			top: 0
+		}
+
+		.site-main .default-shapes-bg .shape-green {
+			width: 817px;
+			height: 712px;
+			background-color: #06F7E4;
+			position: absolute;
+			top: 442px;
+			left: -454px;
+			-webkit-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .11);
+			-moz-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .11);
+			box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .11);
+			-webkit-transform: rotate(46deg);
+			-moz-transform: rotate(46deg);
+			transform: rotate(46deg)
+		}
+
+		.loaded .site-main .default-shapes-bg .shape-green {
+			margin-top: 442px;
+			margin-left: -454px
+		}
+
+		.plus-icon {
+			position: absolute;
+			left: 0;
+			top: 0;
+			font-size: 40px;
+			line-height: 40px;
+			font-weight: 200;
+			color: #535353;
+			opacity: .25
+		}
+
+		.plus-icon .layer {
+			transform-style: preserve-3d;
+			-webkit-transform-style: preserve-3d;
+			backface-visibility: hidden;
+			-webkit-backface-visibility: hidden
+		}
+
+		.plus-icon .layer span {
+			-webkit-transform: rotate(-46deg);
+			-moz-transform: rotate(-46deg);
+			transform: rotate(-46deg);
+			display: block
+		}
+
+		.site-main .contact-btns-section .plus-icon.top {
+			left: 24%;
+			top: -50px
+		}
+
+		.site-main .contact-btns-section .plus-icon.bottom {
+			left: auto;
+			top: auto;
+			right: 28%;
+			bottom: 30px
+		}
+
+		.site-main .text-module-full {
+			width: 100%;
+			height: auto;
+			margin-bottom: 86px
+		}
+
+		.site-main .text-module-full .inner {
+			padding: 0;
+			max-width: 900px
+		}
+
+		.site-main .text-module-full h3 {
+			font-size: 28px;
+			line-height: 30px;
+			font-weight: 800;
+			letter-spacing: -.025em;
+			margin-bottom: 28px
+		}
+
+		.site-main .text-module-full p {
+			font-size: 18px;
+			line-height: 24px;
+			font-weight: 300;
+			margin-bottom: 26px
+		}
+
+		.site-main .text-module-full p:last-child {
+			margin-bottom: 0
+		}
+
+		.site-main .contact-btns-section {
+			width: 100%;
+			height: auto;
+			margin-bottom: 88px
+		}
+
+		.site-main .contact-btns-section .inner {
+			padding: 0;
+			max-width: 900px
+		}
+
+		.site-main .contact-btns-section p {
+			font-size: 30px;
+			line-height: 34px;
+			font-weight: 300;
+			color: #212121;
+			letter-spacing: -.025em;
+			text-shadow: 0 30px 20px rgba(0, 0, 0, .16);
+			margin-bottom: 16px
+		}
+
+		.site-main .contact-btns-section .btn {
+			float: left;
+			margin-right: 16px
+		}
+
+		.site-footer {
+			width: 100%;
+			height: auto;
+			position: relative;
+			overflow: hidden
+		}
+
+		.site-footer .footer-top {
+			width: 100%;
+			height: auto;
+			background-color: #1A1A1A;
+			text-align: center;
+			position: relative;
+			padding: 122px 0 98px 0;
+			overflow: hidden
+		}
+
+		.site-footer .footer-top .bg-shape {
+			width: 77.598828%;
+			height: 1207px;
+			background-color: #1D1D1D;
+			-webkit-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 1);
+			-moz-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 1);
+			box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 1);
+			-webkit-transform: rotate(46deg);
+			-moz-transform: rotate(46deg);
+			transform: rotate(46deg);
+			position: absolute;
+			right: -22.693997%;
+			bottom: -653px
+		}
+
+		.site-footer .footer-top .inner {
+			max-width: 1044px;
+			padding: 0 198px
+		}
+
+		.site-footer .footer-top .footer-logo {
+			width: 146px;
+			height: 113px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-image: url(../wp-content/themes/Basecamp/images/footer-logo.png);
+			margin-bottom: 58px
+		}
+
+		.site-footer .footer-top .text-wrap {
+			position: relative;
+			padding-bottom: 22px;
+			margin-bottom: 42px;
+			display: none
+		}
+
+		.site-footer .footer-top .text-wrap::after {
+			content: '';
+			width: 82px;
+			height: 1px;
+			background-color: #fff;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: 0 auto
+		}
+
+		.site-footer .footer-top p {
+			font-size: 14px;
+			line-height: 22px;
+			font-weight: 400;
+			color: #fff;
+			margin-bottom: 24px
+		}
+
+		.site-footer .footer-top ul {
+			margin-bottom: 20px
+		}
+
+		.site-footer .footer-top ul li {
+			list-style: none;
+			font-size: 14px;
+			line-height: 22px;
+			font-weight: 800;
+			color: #fff
+		}
+
+		.site-footer .footer-top ul li a {
+			font-weight: 400;
+			color: #fff
+		}
+
+		.site-footer .footer-top ul li span {
+			font-weight: 400;
+			display: block
+		}
+
+		.site-footer .footer-top ul li.address {
+			margin-bottom: 24px
+		}
+
+		.site-footer .footer-top .social-links {
+			width: 100%;
+			overflow: hidden;
+			text-align: center;
+			font-size: 0
+		}
+
+		.site-footer .footer-top .social-links .social-link {
+			width: 24px;
+			height: 24px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center center;
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 10px
+		}
+
+		.site-footer .footer-top .social-links .social-link:last-child {
+			margin-right: 0
+		}
+
+		.site-footer .footer-top .social-links .social-link a {
+			width: 100%;
+			height: 100%;
+			display: block
+		}
+
+		.site-footer .footer-top p {
+			font-size: 12px
+		}
+
+		.site-footer .footer-top ul li {
+			font-size: 12px
+		}
+
+		.navigation-wrap .nav-container .btns-wrap .contact-info ul li.address span {
+			display: block
+		}
+
+		@media only screen and (max-width:1160px) {
+			.navigation-wrap::before {
+				width: 1059px;
+				height: 1400px;
+				top: -437px
+			}
+		}
+
+		@media only screen and (max-width:1024px) {
+			.navigation-wrap::before {
+				width: 859px;
+				height: 1200px;
+				top: -237px;
+				left: -231px
+			}
+
+			.site-main .text-module-full .inner {
+				padding: 0 8%
+			}
+
+			.site-main .contact-btns-section .inner {
+				padding: 0 8%
+			}
+
+			.site-footer .footer-top {
+				padding: 70px 0 38px 0
+			}
+
+			.site-footer .footer-top .inner {
+				padding: 0 99px
+			}
+		}
+
+		@media only screen and (max-width:680px) {
+			.site-logo {
+				width: 28px;
+				height: 43px
+			}
+
+			.site-header {
+				padding: 17px 30px
+			}
+
+			.mobile-nav-btn {
+				margin-top: 9px
+			}
+
+			.navigation-wrap::before {
+				width: 1200px;
+				height: 1200px;
+				left: -266px;
+				top: -94px
+			}
+
+			.site-main .default-shapes-bg {
+				display: none
+			}
+
+			.site-main .text-module-full {
+				margin-bottom: 56px
+			}
+
+			.site-main .text-module-full .inner {
+				padding: 0 27px 0 23px
+			}
+
+			.site-main .contact-btns-section .inner {
+				padding: 0 18px 0 22px
+			}
+
+			.site-footer .footer-top .inner {
+				padding: 0 30px
+			}
+
+			.plus-icon {
+				display: none
+			}
+
+			.header-wrp {
+				display: none
+			}
+		}
+
+		@media only screen and (max-width:580px) {
+			.navigation-wrap .nav-container {
+				width: 375px
+			}
+		}
+
+		@media only screen and (max-width:500px) {
+			.navigation-wrap::before {
+				position: fixed;
+				left: -128px
+			}
+
+			.navigation-wrap .nav-container {
+				background-color: transparent
+			}
+
+			.site-footer .footer-top {
+				text-align: left
+			}
+
+			.site-footer .footer-top .social-links {
+				text-align: left
+			}
+
+			.site-footer .footer-top .text-wrap {
+				padding-bottom: 0
+			}
+
+			.site-footer .footer-top .text-wrap::after {
+				display: none
+			}
+		}
+
+		@media only screen and (max-width:400px) {
+			.navigation-wrap {
+				width: 100%
+			}
+
+			.navigation-wrap .nav-container {
+				width: 100%
+			}
+
+			.navigation-wrap .nav-container .btns-wrap .btn {
+				margin-bottom: 15px
+			}
+		}
+
+		@media only screen and (max-width:350px) {
+			.navigation-wrap .nav-container .site-navigation li {
+				font-size: 30px
+			}
+		}
+	</style>
+
+<meta name="description" content="Hyphenx its a tech solutions company" />
+
+<link rel="canonical" href="index.html" />
+
+<meta property="og:locale" content="es_ES" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Hyphenx" />
+<meta property="og:description" content="Hyphenx its a tech solutions company" />
+<meta property="og:url" content="https://hyphenx.co" />
+<meta property="og:site_name" content="Hyphenx Company" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Hyphenx its a tech solutions company" />
+<meta name="twitter:title" content="Hyphenx" />
+
+	<script type="application/ld+json" class="yoast-schema-graph">
+		{
+			"@context": "https://schema.org",
+			"@graph": [{
+				"@type": "WebSite",
+				"@id": "https://bscmp.nl/#website",
+				"url": "https://bscmp.nl/",
+				"name": "Basecamp Business Creatives",
+				"description": "Bedenkers en makers van concepten op het snijvlak van creativiteit en commercie",
+				"potentialAction": [{
+					"@type": "SearchAction",
+					"target": {
+						"@type": "EntryPoint",
+						"urlTemplate": "https://bscmp.nl/?s={search_term_string}"
+					},
+					"query-input": "required name=search_term_string"
+				}],
+				"inLanguage": "nl"
+			}, {
+				"@type": "WebPage",
+				"@id": "https://bscmp.nl/vacatures/#webpage",
+				"url": "https://bscmp.nl/vacatures/",
+				"name": "Vacatures - Basecamp Business Creatives",
+				"isPartOf": {
+					"@id": "https://bscmp.nl/#website"
+				},
+				"datePublished": "2018-03-22T00:19:16+00:00",
+				"dateModified": "2019-06-06T12:24:31+00:00",
+				"description": "We love talented people! Basecamp werkt alleen met\u00a0vakidioten: mensen diegepassioneerd bezig zijn en liefde voor het vak hebben. Bekijk onze vacatures!",
+				"breadcrumb": {
+					"@id": "https://bscmp.nl/vacatures/#breadcrumb"
+				},
+				"inLanguage": "nl",
+				"potentialAction": [{
+					"@type": "ReadAction",
+					"target": ["https://bscmp.nl/vacatures/"]
+				}]
+			}, {
+				"@type": "BreadcrumbList",
+				"@id": "https://bscmp.nl/vacatures/#breadcrumb",
+				"itemListElement": [{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://bscmp.nl/"
+				}, {
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Vacatures"
+				}]
+			}]
+		}
+	</script>
+
+	<link rel='dns-prefetch' href='http://maps.googleapis.com/' />
+	<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+	<link rel='dns-prefetch' href='http://s.w.org/' />
+
+	<script type="text/javascript">
+		window._wpemojiSettings = {
+			"baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/",
+			"ext": ".png",
+			"svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/",
+			"svgExt": ".svg",
+			"source": {
+				"concatemoji": "https:\/\/bscmp.nl\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.2"
+			}
+		};
+		! function (e, a, t) {
+			var n, r, o, i = a.createElement("canvas"),
+				p = i.getContext && i.getContext("2d");
+
+			function s(e, t) {
+				var a = String.fromCharCode;
+				p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0);
+				e = i.toDataURL();
+				return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL()
+			}
+
+			function c(e) {
+				var t = a.createElement("script");
+				t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t)
+			}
+			for (o = Array("flag", "emoji"), t.supports = {
+					everything: !0,
+					everythingExceptFlag: !0
+				}, r = 0; r < o.length; r++) t.supports[o[r]] = function (e) {
+				if (!p || !p.fillText) return !1;
+				switch (p.textBaseline = "top", p.font = "600 32px Arial", e) {
+					case "flag":
+						return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55356,
+							56826, 55356, 56819
+						], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128,
+							56421, 56128, 56430, 56128, 56423, 56128, 56447
+						], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128,
+							56430, 8203, 56128, 56423, 8203, 56128, 56447
+						]);
+					case "emoji":
+						return !s([55357, 56424, 8205, 55356, 57212], [55357, 56424, 8203, 55356, 57212])
+				}
+				return !1
+			}(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports
+				.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
+			t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t
+				.readyCallback = function () {
+					t.DOMReady = !0
+				}, t.supports.everything || (n = function () {
+						t.readyCallback()
+					}, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !
+					1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () {
+						"complete" === a.readyState && t.readyCallback()
+					})), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n
+						.wpemoji)))
+		}(window, document, window._wpemojiSettings);
+	</script>
+
+	<style type="text/css">
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 .07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important
+		}
+	</style>
+
+	<link rel='preload' id='wp-block-library-css'
+		href='../wp-includes/css/dist/block-library/style.min9f31.css?ver=5.7.2' as="style"
+		onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+	<link rel='preload' id='BCAMP-fonts-css'
+		href='https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i'
+		as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+	<link data-minify="1" rel='preload' id='BCAMP-style-css'
+		href='../wp-content/cache/min/1/wp-content/themes/Basecamp/style-0deba83461b27f457a17a455c7be0a7f.css'
+		as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+	<link data-minify="1" rel='preload' id='BCAMP-responsive-css'
+		href='../wp-content/cache/min/1/wp-content/themes/Basecamp/css/responsive-f546d4e8d9aebb7ebeb0b1f75917f0a4.css'
+		as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+	<link rel='preload' id='cookie-notice-front-css'
+		href='../wp-content/plugins/cookie-notice/css/front.min9f31.css?ver=5.7.2' as="style"
+		onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+
+	<style id='rocket-lazyload-inline-css' type='text/css'>
+		.rll-youtube-player {
+			position: relative;
+			padding-bottom: 56.23%;
+			height: 0;
+			overflow: hidden;
+			max-width: 100%
+		}
+
+		.rll-youtube-player iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 100;
+			background: 0 0
+		}
+
+		.rll-youtube-player img {
+			bottom: 0;
+			display: block;
+			left: 0;
+			margin: auto;
+			max-width: 100%;
+			width: 100%;
+			position: absolute;
+			right: 0;
+			top: 0;
+			border: none;
+			height: auto;
+			cursor: pointer;
+			-webkit-transition: .4s all;
+			-moz-transition: .4s all;
+			transition: .4s all
+		}
+
+		.rll-youtube-player img:hover {
+			filter: brightness(75%)
+		}
+
+		.rll-youtube-player .play {
+			height: 72px;
+			width: 72px;
+			left: 50%;
+			top: 50%;
+			margin-left: -36px;
+			margin-top: -36px;
+			position: absolute;
+			background: url(../wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat;
+			cursor: pointer
+		}
+	</style>
+
+	<script type='text/javascript' src='../wp-includes/js/jquery/jquery.min9d52.js?ver=3.5.1' id='jquery-core-js'>
+	</script>
+
+	<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2'
+		id='jquery-migrate-js'></script>
+
+	<script type='text/javascript' id='cookie-notice-front-js-extra'>
+		/* <![CDATA[ */
+		var cnArgs = {
+			"ajaxUrl": "https:\/\/bscmp.nl\/wp-admin\/admin-ajax.php",
+			"nonce": "b03cd9d30c",
+			"hideEffect": "fade",
+			"position": "bottom",
+			"onScroll": "0",
+			"onScrollOffset": "100",
+			"onClick": "0",
+			"cookieName": "cookie_notice_accepted",
+			"cookieTime": "7862400",
+			"cookieTimeRejected": "2592000",
+			"cookiePath": "\/",
+			"cookieDomain": "",
+			"redirection": "0",
+			"cache": "1",
+			"refuse": "0",
+			"revokeCookies": "0",
+			"revokeCookiesOpt": "automatic",
+			"secure": "1"
+		}; /* ]]> */
+	</script>
+
+	<script async type='text/javascript' src='../wp-content/plugins/cookie-notice/js/front.min1c12.js?ver=2.0.4'
+		id='cookie-notice-front-js'></script>
+	<link rel="https://api.w.org/" href="https://bscmp.nl/wp-json/" />
+	<link rel="alternate" type="application/json" href="https://bscmp.nl/wp-json/wp/v2/pages/239" />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://bscmp.nl/xmlrpc.php?rsd" />
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://bscmp.nl/wp-includes/wlwmanifest.xml" />
+
+	<meta name="generator" content="WordPress 5.7.2" />
+
+	<link rel='shortlink' href='https://hyphenx.co/vacatures/index.html' />
+	<link rel="icon" href="../wp-content/uploads/2018/10/cropped-B-32x32.jpg" sizes="32x32" />
+	<link rel="icon" href="../wp-content/uploads/2018/10/cropped-B-192x192.jpg" sizes="192x192" />
+	<link rel="apple-touch-icon" href="../wp-content/uploads/2018/10/cropped-B-180x180.jpg" />
+
+	<meta name="msapplication-TileImage" content="../wp-content/uploads/2018/10/cropped-B-270x270.jpg" />
+
+	<noscript>
+		<style id="rocket-lazyload-nojs-css">
+			.rll-youtube-player,
+			[data-lazy-src] {
+				display: none !important
+			}
+		</style>
+	</noscript>
+
+	<script>
+		/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+		(function (w) {
+			"use strict";
+			if (!w.loadCSS) {
+				w.loadCSS = function () {}
+			}
+			var rp = loadCSS.relpreload = {};
+			rp.support = (function () {
+				var ret;
+				try {
+					ret = w.document.createElement("link").relList.supports("preload")
+				} catch (e) {
+					ret = !1
+				}
+				return function () {
+					return ret
+				}
+			})();
+			rp.bindMediaToggle = function (link) {
+				var finalMedia = link.media || "all";
+
+				function enableStylesheet() {
+					link.media = finalMedia
+				}
+				if (link.addEventListener) {
+					link.addEventListener("load", enableStylesheet)
+				} else if (link.attachEvent) {
+					link.attachEvent("onload", enableStylesheet)
+				}
+				setTimeout(function () {
+					link.rel = "stylesheet";
+					link.media = "only x"
+				});
+				setTimeout(enableStylesheet, 3000)
+			};
+			rp.poly = function () {
+				if (rp.support()) {
+					return
+				}
+				var links = w.document.getElementsByTagName("link");
+				for (var i = 0; i < links.length; i++) {
+					var link = links[i];
+					if (link.rel === "preload" && link.getAttribute("as") === "style" && !link.getAttribute(
+							"data-loadcss")) {
+						link.setAttribute("data-loadcss", !0);
+						rp.bindMediaToggle(link)
+					}
+				}
+			};
+			if (!rp.support()) {
+				rp.poly();
+				var run = w.setInterval(rp.poly, 500);
+				if (w.addEventListener) {
+					w.addEventListener("load", function () {
+						rp.poly();
+						w.clearInterval(run)
+					})
+				} else if (w.attachEvent) {
+					w.attachEvent("onload", function () {
+						rp.poly();
+						w.clearInterval(run)
+					})
+				}
+			}
+			if (typeof exports !== "undefined") {
+				exports.loadCSS = loadCSS
+			} else {
+				w.loadCSS = loadCSS
+			}
+		}(typeof global !== "undefined" ? global : this))
+	</script>
+</head>
+
+<body class="page-template-default page page-id-239 innerpage   cookies-not-set">
+
+	<div id="wrapper">
+
+		<div id="parallax-area"></div>
+		<header class="site-header">
+			<div class="mobile-nav-btn"> <span></span> <span></span> <span></span></div>
+		</header>
+
+		<div class="navigation-wrap">
+			<div class="nav-container">
+
+				<ul id="menu-primary-menu" class="site-navigation">
+					<li id="menu-item-283"
+						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-283"><a
+							href="../index.html">Inicio</a></li>
+
+					<li id="menu-item-287"
+						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-287"><a
+							href="../ons-werk/index.html">Servicios</a></li>
+
+					<li id="menu-item-750"
+						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-750"><a
+							href="../over-basecamp/index.html">Sobre nosotros</a></li>
+
+					<li id="menu-item-841"
+						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-841"><a
+							href="../specialiteiten/index.html">Cursos gratuitos</a></li>
+
+					<li id="menu-item-288"
+						class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-239 current_page_item menu-item-288">
+						<a href="index.html" aria-current="page">Trabaja con nosotros</a></li>
+
+				<!--	<li id="menu-item-285"
+						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-285"><a
+							href="">Contact</a></li>	-->
+				</ul>
+
+				<div class="btns-wrap">
+					<div class="btn"> <a href="contact.html">Contáctenos</a></div>
+
+					<div class="contact-btns">
+						<div class="contact-btn phone"> <a href=""></a></div>
+						<div class="contact-btn location">
+							<a href="https://www.google.com/maps/dir/My+Location/1300+CA-82,+San+Mateo,+CA+94402,+EE.+UU./@37.5547582,-122.3194827,17z/data=!3m1!4b1!4m5!3m4!1s0x808f9e5dfa7a35cd:0x5183fa23ab3668eb!8m2!3d37.5547582!4d-122.317294" target="_blank"></a>
+						</div>
+					</div>
+
+					<div class="contact-info">
+						<ul>
+							<li class="address">Hyphenx Company <span>1300 King's Highway - 6th Suite /
+								San Mateo, CA 94402, Usa</span></li>
+							<li>Teléfono: <a href="tel:+31 (0)33 422 00 66">+31 (0)33 422 00 66</a></li>
+							<li>Email: <a href="mailto:hello@hyphenx.co">hello@hyphenx.co</a></li>
+						</ul>
+
+						<div class="social-links">
+							<div class="social-link"
+								style="background-image: url(../wp-content/themes/Basecamp/images/facebook-icon-black.png);">
+								<a href="https://www.facebook.com/hyphenx/"></a></div>
+							<div class="social-link"
+								style="background-image: url(../wp-content/themes/Basecamp/images/instagram-icon-black.png);">
+								<a href="https://www.instagram.com/hyphenx"></a></div>
+							<div class="social-link"
+								style="background-image: url(../wp-content/themes/Basecamp/images/linkedin-icon-black.png);">
+								<a href="https://www.linkedin.com/company/hyphenx"></a></div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="nav-overlay"></div>
+		<div class="featured-text-section">
+			<div class="shapes-bg" data-anchor-target=".featured-text-section"
+				data-bottom-top="transform:translateY(0px);" data-top-bottom="transform:translateY(200px);">
+				<div class="shapes-wrap shapes-background-parallax">
+					<div data-depth="0.20" class="shape-green layer"></div>
+					<div data-depth="0.30" class="shape-white layer"></div>
+				</div>
+			</div>
+			<div class="plus-icon top shapes-background-parallax" data-start="transform:translateY(0px);"
+				data-top-end="transform:translateY(200px);">
+				<div class="layer" data-depth="0.40"><span>+</span></div>
+			</div>
+			<div class="plus-icon bottom shapes-background-parallax" data-start="transform:translateY(0px);"
+				data-top-end="transform:translateY(200px);">
+				<div class="layer" data-depth="0.40"><span>+</span></div>
+			</div>
+			<div class="inner cf">
+				<div class="text-wrap">
+					<h1>Vacantes</h1>
+					<h1 class="mobile-title"></h1>
+					<p>Solo trabajamos con profesionales, y no hablamos de personas con título. 
+						Buscamos gente ambiciosa con amor por lo que hace. 
+						Es posible que estemos buscando a alguien con tu perfil en este momento, 
+						si crees que no podemos prescindir de ti ¡No dejes que los nervios te impidan presentarte! </p>
+				</div>
+			</div>
+			<div class="scrolldown-btn-wrap">
+				<div class="scrolldown-btn"> <span>scroll</span>
+					<div class="icon"></div>
+				</div>
+			</div>
+		</div>
+		<div class="site-main">
+			<div class="default-shapes-bg" data-bottom-top="transform:translateY(0px);"
+				data--100-end="transform:translateY(200px);">
+				<div class="shapes-wrap shapes-background-parallax">
+					<div class="shape-green layer" data-depth="0.20"></div>
+				</div>
+			</div>
+			<div class="vacatures-section smooth">
+				<div class="inner cf">
+					<div class="one-third  white "> <a href="../vacature/open-sollicitatie/index.html"
+							class="tilter tilter--1">
+							<div class="one-third-inner tilter__figure">
+								<div data-bg="url(https://bscmp.nl/wp-content/uploads/2018/09/Header-algemeen@2x.jpg)"
+									class="img-wrap rocket-lazyload"></div>
+								<div class="text-outer-wrap">
+									<div class="text-wrap tilter__caption">
+										<div class="text-wrap">
+											<h4><span>¡Si no arriesgas, no ganarás!</span> Aplicar ahora</h4>
+										</div>
+									</div>
+								</div>
+								<div class="btn-arrow">
+									<div class="icon"></div>
+								</div>
+							</div>
+						</a></div>
+				</div>
+			</div>
+			<div class="cta-section">
+				<div class="plus-icon top-left shapes-background-parallax" data-start="transform:translateY(0px);"
+					data-top-end="transform:translateY(200px);">
+					<div class="layer" data-depth="0.40"><span>+</span></div>
+				</div>
+				<div class="plus-icon top-right shapes-background-parallax" data-start="transform:translateY(0px);"
+					data-top-end="transform:translateY(200px);">
+					<div class="layer" data-depth="0.40"><span>+</span></div>
+				</div>
+				<div class="plus-icon bottom shapes-background-parallax" data-start="transform:translateY(0px);"
+					data-top-end="transform:translateY(200px);">
+					<div class="layer" data-depth="0.40"><span>+</span></div>
+				</div>
+				<div class="inner cf">
+					<div class="text-wrap">
+						<h3>¿Dudas?</h3>
+						<p>¿Le gustaría saber más sobre un puesto, nuestra empresa o le gustaría preguntar algo? <br>
+							¿Desea una vacante especial? Póngase en contacto con Pietro o Gerard.</p>
+					</div>
+					<div class="contact-persons-wrap">
+						<div class="contact-person ">
+							<div data-bg="url(../wp-content/uploads/2018/03/gerard.jpg)"
+								class="img-wrap rocket-lazyload"></div>
+							<div class="text">
+								<h4>Gerard Altamirano - Director General COO - Fundador</h4>
+								<ul>
+									<li><a href="mailto:ferdi@bscmp.nl">gerardalt@hyphenx.co</a></li>
+									<li><a href="tel: +31 (0)6 144 47 859"> +31 (0)6 144 47 859</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="contact-person  last ">
+							<div data-bg="url(../wp-content/uploads/2018/03/pietro.jpg)"
+								class="img-wrap rocket-lazyload"></div>
+							<div class="text">
+								<h4>Pietro Aramburú - Director Ejecutivo CEO - Fundador</h4>
+								<ul>
+									<li><a href="mailto:pim@bscmp.nl">pietromag@hyphenx.co</a></li>
+									<li><a href="tel:+31 (0)6 343 06 760">+31 (0)6 343 06 760</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="site-footer">
+			<div class="header-wrp">
+				<div class="site-logo"> <a href="https://hyphenx.co"></a></div>
+				<div class="mobile-nav-btn"> <span></span> <span></span> <span></span></div>
+			</div>
+
+			<div class="footer-top">
+				<div class="bg-shape"></div>
+
+				<div class="inner cf">
+					<div class="footer-logo"> <a href="https://hyphenx.co"></a></div>
+
+					<div class="text-wrap">
+						  
+						<p>Hyphenx Company es una startup de soluciones tecnológicas 
+							que hace todo lo posible por sus clientes.</p>
+
+						<p>Trabajamos en la intersección del comercio y la comunicación creativa. 
+							Entendemos los procesos comerciales y nos sentimos más felices a medida que se vuelven más complejos 
+							 y realmente podemos desarrollarnos en ellos. 
+							 Donde la visión es esencial y realmente podemos marcar la diferencia. 
+							 Con nuestros resultados, o mediante nuestro enfoque distintivo.</p>
+
+							<br> <br>
+
+						<p>Respetamos las cosas sagradas, pero nos complace cuestionarlas si eso nos acerca a la meta. 
+							De la idea creativa, a la asociación, a los resultados. ¡Esto es Hyphenx!
+						</p>
+
+					</div>
+
+					<ul>
+						<li class="address">Hyphenx Company <span>1300 King's Highway
+							San Mateo, CA 94402, United States</span></li>
+					   <li> <a href="tel:+31 (0)33 422 00 66">+31 (0)33 422 00 66</a></li>
+					   <li> <a href="mailto:hello@hyphenx.co">hello@hyphenx.co</a></li>
+					</ul>
+
+					<div class="social-links">
+						<div class="social-link"
+							style="background-image: url(../wp-content/themes/Basecamp/images/facebook-icon-white.png);">
+							<a href="https://www.facebook.com/hyphenx/"></a></div>
+						<div class="social-link"
+							style="background-image: url(../wp-content/themes/Basecamp/images/instagram-icon-white.png);">
+							<a href="https://www.instagram.com/hyphenx"></a></div>
+						<div class="social-link"
+							style="background-image: url(../wp-content/themes/Basecamp/images/linkedin-icon-white.png);">
+							<a href="https://www.linkedin.com/company/hyphenx"></a></div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="inner cf">
+					<ul>
+						<li><a href="">Lincenciamiento y leyes</a>
+						</li>
+						<li><a href="../cookie-policy/index.html">Política de Cookies</a></li>
+					</ul> <span class="copyright">2021 - Hyphenx Company ©</span>
+				</div>
+			</div>
+
+		</footer>
+
+	</div>
+
+	<script type='text/javascript'
+		src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCr9cgEtZiOn4pVba34gRIJ_Vf8bfBVaf8&amp;ver=5.7.2'
+		id='BCAMP-googlemap-js'></script>
+	<script data-minify="1" type='text/javascript'
+		src='../wp-content/cache/min/1/wp-content/themes/Basecamp/scripts/jquery.bxslider-3edd2b1f49eb5f5c3bae17d2c5c1d371.js'
+		id='BCAMP-carousel-js'></script>
+	<script data-minify="1" type='text/javascript'
+		src='../wp-content/cache/min/1/wp-content/themes/Basecamp/scripts/jquery.matchHeight-55ce9b2f7865b351e2913450282ad391.js'
+		id='BCAMP-yt-matchHeight-js'></script>
+	<script type='text/javascript' src='../wp-content/themes/Basecamp/scripts/imagesloaded.pkgd.min9f31.js?ver=5.7.2'
+		id='BCAMP-imagesloaded-js'></script>
+	<script type='text/javascript' src='../wp-content/themes/Basecamp/scripts/anime.min9f31.js?ver=5.7.2'
+		id='BCAMP-anime-js'></script>
+	<script data-minify="1" type='text/javascript'
+		src='../wp-content/cache/min/1/wp-content/themes/Basecamp/scripts/main-f8f7d670e48ea06b09c885b4e643ea88.js'
+		id='BCAMP-main-js'></script>
+	<script type='text/javascript' src='../wp-content/themes/Basecamp/scripts/skrollr.min9f31.js?ver=5.7.2'
+		id='BCAMP-skrollr-js'></script>
+	<script data-minify="1" type='text/javascript'
+		src='../wp-content/cache/min/1/wp-content/themes/Basecamp/scripts/parallax-2e0df9f841584e58ff1d66d9f02b6293.js'
+		id='BCAMP-parallax-js'></script>
+	<script type='text/javascript' id='BCAMP-custom-js-extra'>
+		/* <![CDATA[ */
+		var map_script_vars = {
+			"map_pins": {
+				"address": "Basecamp Creative Development, Bergstraat 11, 3811 NE Amersfoort, Netherlands",
+				"lat": "52.15088879999999",
+				"lng": "5.383762100000013"
+			},
+			"marker_icon": "https:\/\/bscmp.nl\/wp-content\/themes\/Basecamp\/images\/map-marker-new.png",
+			"home_url": "https:\/\/bscmp.nl"
+		}; /* ]]> */
+	</script>
+
+	<script data-minify="1" type='text/javascript'
+		src='../wp-content/cache/min/1/wp-content/themes/Basecamp/scripts/custom-f87acd52c3bcef9042ecdc486d7399f1.js'
+		id='BCAMP-custom-js'></script>
+
+	<div id="cookie-notice" role="banner" class="cookie-notice-hidden cookie-revoke-hidden cn-position-bottom"
+		aria-label="Cookie Notice" style="background-color: rgba(10,0,0,1);">
+
+		<div id="cookie-notice" role="banner" class="cn-bottom wp-default"
+		style="color: #ffffff; background-color: #0a0000;">
+		<div class="cookie-notice-container"><span id="cn-notice-text">Para optimizar la visita de nuestro sitio web usamos cookies.
+	¿Por qué? Vea nuestra política de cookies para más
+	información.
+	Continuar significa que está de acuerdo.</span><a href="#" id="cn-accept-cookie"
+		data-cookie-set="accept" class="cn-set-cookie cn-button wp-default .btn a">Entiendo</a><a
+		href="../cookie-policy/index.html" target="_self" id="cn-more-info"
+		class="cn-more-info cn-button wp-default .btn a">Más información</a></div>
+	</div>
+
+	</div>
+	<script>
+		window.lazyLoadOptions = {
+			elements_selector: "img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",
+			data_src: "lazy-src",
+			data_srcset: "lazy-srcset",
+			data_sizes: "lazy-sizes",
+			class_loading: "lazyloading",
+			class_loaded: "lazyloaded",
+			threshold: 300,
+			callback_loaded: function (element) {
+				if (element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible") {
+					if (element.classList.contains("lazyloaded")) {
+						if (typeof window.jQuery != "undefined") {
+							if (jQuery.fn.fitVids) {
+								jQuery(element).parent().fitVids()
+							}
+						}
+					}
+				}
+			}
+		};
+		window.addEventListener('LazyLoad::Initialized', function (e) {
+			var lazyLoadInstance = e.detail.instance;
+			if (window.MutationObserver) {
+				var observer = new MutationObserver(function (mutations) {
+					var image_count = 0;
+					var iframe_count = 0;
+					var rocketlazy_count = 0;
+					mutations.forEach(function (mutation) {
+						for (i = 0; i < mutation.addedNodes.length; i++) {
+							if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function') {
+								return
+							}
+							if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function') {
+								return
+							}
+							images = mutation.addedNodes[i].getElementsByTagName('img');
+							is_image = mutation.addedNodes[i].tagName == "IMG";
+							iframes = mutation.addedNodes[i].getElementsByTagName('iframe');
+							is_iframe = mutation.addedNodes[i].tagName == "IFRAME";
+							rocket_lazy = mutation.addedNodes[i].getElementsByClassName(
+								'rocket-lazyload');
+							image_count += images.length;
+							iframe_count += iframes.length;
+							rocketlazy_count += rocket_lazy.length;
+							if (is_image) {
+								image_count += 1
+							}
+							if (is_iframe) {
+								iframe_count += 1
+							}
+						}
+					});
+					if (image_count > 0 || iframe_count > 0 || rocketlazy_count > 0) {
+						lazyLoadInstance.update()
+					}
+				});
+				var b = document.getElementsByTagName("body")[0];
+				var config = {
+					childList: !0,
+					subtree: !0
+				};
+				observer.observe(b, config)
+			}
+		}, !1)
+	</script>
+	<script data-no-minify="1" async src="../wp-content/plugins/wp-rocket/assets/js/lazyload/11.0.6/lazyload.min.js">
+	</script>
+	<script>
+		function lazyLoadThumb(e) {
+			var t =
+				'<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',
+				a = '<div class="play"></div>';
+			return t.replace("ID", e) + a
+		}
+
+		function lazyLoadYoutubeIframe() {
+			var e = document.createElement("iframe"),
+				t = "https://www.youtube.com/embed/ID?autoplay=1";
+			t += 0 === this.dataset.query.length ? '' : '&' + this.dataset.query;
+			e.setAttribute("src", t.replace("ID", this.dataset.id)), e.setAttribute("frameborder", "0"), e.setAttribute(
+				"allowfullscreen", "1"), this.parentNode.replaceChild(e, this)
+		}
+		document.addEventListener("DOMContentLoaded", function () {
+			var e, t, a = document.getElementsByClassName("rll-youtube-player");
+			for (t = 0; t < a.length; t++) e = document.createElement("div"), e.setAttribute("data-id", a[t].dataset
+				.id), e.setAttribute("data-query", a[t].dataset.query), e.innerHTML = lazyLoadThumb(a[t].dataset
+				.id), e.onclick = lazyLoadYoutubeIframe, a[t].appendChild(e)
+		});
+	</script>
+	<script>
+		(function (d) {
+			var config = {
+					kitId: 'knz2rqs',
+					scriptTimeout: 3000,
+					async: true
+				},
+				h = d.documentElement,
+				t = setTimeout(function () {
+					h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+				}, config.scriptTimeout),
+				tk = d.createElement("script"),
+				f = false,
+				s = d.getElementsByTagName("script")[0],
+				a;
+			h.className += " wf-loading";
+			tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+			tk.async = true;
+			tk.onload = tk.onreadystatechange = function () {
+				a = this.readyState;
+				if (f || a && a != "complete" && a != "loaded") return;
+				f = true;
+				clearTimeout(t);
+				try {
+					Typekit.load(config)
+				} catch (e) {}
+			};
+			s.parentNode.insertBefore(tk, s)
+		})(document);
+	</script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-60163430-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-60163430-1');
+	</script> <noscript>
+		<link rel='stylesheet' id='wp-block-library-css'
+			href='../wp-includes/css/dist/block-library/style.min9f31.css?ver=5.7.2' type='text/css' media='all' />
+		</noscript><noscript>
+		<link rel='stylesheet' id='BCAMP-fonts-css'
+			href='https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i'
+			type='text/css' media='all' /></noscript><noscript>
+		<link data-minify="1" rel='stylesheet' id='BCAMP-style-css'
+			href='../wp-content/cache/min/1/wp-content/themes/Basecamp/style-0deba83461b27f457a17a455c7be0a7f.css'
+			type='text/css' media='all' /></noscript><noscript>
+		<link data-minify="1" rel='stylesheet' id='BCAMP-responsive-css'
+			href='../wp-content/cache/min/1/wp-content/themes/Basecamp/css/responsive-f546d4e8d9aebb7ebeb0b1f75917f0a4.css'
+			type='text/css' media='all' /></noscript><noscript>
+		<link rel='stylesheet' id='cookie-notice-front-css'
+			href='../wp-content/plugins/cookie-notice/css/front.min9f31.css?ver=5.7.2' type='text/css' media='all' />
+		</noscript>
+</body>
+
+</html>
