@@ -1233,19 +1233,19 @@
 										<div class="text-wrap tilter__caption">
 											<h4><span>TRILUX, Simplify your light</span> Speed of Light</h4>
 											<ul>
-												<li><a href="actie-website/index.html">Actie website</a></li>
-												<li><a href="direct-mail-campagne/index.html">Direct Mail Campagne</a>
+												<li><a href="#">Actie website</a></li>
+												<li><a href="#">Direct Mail Campagne</a>
 												</li>
-												<li><a href="ux-design/index.html">User Experience Design</a></li>
-												<li><a href="user-interface-design/index.html">User Interface Design</a>
+												<li><a href="#">User Experience Design</a></li>
+												<li><a href="#">User Interface Design</a>
 												</li>
-											</ul> <a href="project/trilux-speed-of-light/index.html"
+											</ul> <a href="#"
 												class="full-link" target="_blank"></a>
 										</div>
 									</div>
 									<div class="btn-arrow">
 										<div class="icon"></div>
-									</div> <a href="project/trilux-speed-of-light/index.html" class="full-link"></a>
+									</div> <a href="#" class="full-link"></a>
 								</div>
 							</div>
 						</div>
@@ -1262,16 +1262,16 @@
 										<div class="text-wrap tilter__caption">
 											<h4><span>TRILUX</span> Voor de Installateur</h4>
 											<ul>
-												<li><a href="ux-design/index.html">User Experience Design</a></li>
-												<li><a href="user-interface-design/index.html">User Interface Design</a>
+												<li><a href="#">User Experience Design</a></li>
+												<li><a href="#">User Interface Design</a>
 												</li>
-											</ul> <a href="project/trilux-voor-de-installateur/index.html"
+											</ul> <a href="#"
 												class="full-link"></a>
 										</div>
 									</div>
 									<div class="btn-arrow">
 										<div class="icon"></div>
-									</div> <a href="project/trilux-voor-de-installateur/index.html"
+									</div> <a href="#"
 										class="full-link"></a>
 								</div>
 							</div>
@@ -1288,16 +1288,16 @@
 										<div class="text-wrap tilter__caption">
 											<h4><span>Brezan</span> Online branding en website</h4>
 											<ul>
-												<li><a href="corporate-website/index.html">Corporate website</a></li>
-												<li><a href="user-interface-design/index.html">User Interface Design</a>
+												<li><a href="#">Corporate website</a></li>
+												<li><a href="#">User Interface Design</a>
 												</li>
-												<li><a href="ux-design/index.html">User Experience Design</a></li>
-											</ul> <a href="project/brezan/index.html" class="full-link"></a>
+												<li><a href="#">User Experience Design</a></li>
+											</ul> <a href="#" class="full-link"></a>
 										</div>
 									</div>
 									<div class="btn-arrow">
 										<div class="icon"></div>
-									</div> <a href="project/brezan/index.html" class="full-link"></a>
+									</div> <a href="#" class="full-link"></a>
 								</div>
 							</div>
 						</div>
@@ -1313,14 +1313,14 @@
 										<div class="text-wrap tilter__caption">
 											<h4><span>ANVA</span> Corporate Magazine voor klanten en prospects</h4>
 											<ul>
-												<li><a href="corporate-magazines/index.html">Corporate magazines</a>
+												<li><a href="#">Corporate magazines</a>
 												</li>
-											</ul> <a href="project/anva-magazine/index.html" class="full-link"></a>
+											</ul> <a href="#" class="full-link"></a>
 										</div>
 									</div>
 									<div class="btn-arrow">
 										<div class="icon"></div>
-									</div> <a href="project/anva-magazine/index.html" class="full-link"></a>
+									</div> <a href="#" class="full-link"></a>
 								</div>
 							</div>
 						</div>
@@ -1336,16 +1336,16 @@
 										<div class="text-wrap tilter__caption">
 											<h4><span>R-net</span> Website voor reizigers</h4>
 											<ul>
-												<li><a href="corporate-website/index.html">Corporate website</a></li>
-												<li><a href="ux-design/index.html">User Experience Design</a></li>
-												<li><a href="user-interface-design/index.html">User Interface Design</a>
+												<li><a href="#">Corporate website</a></li>
+												<li><a href="#">User Experience Design</a></li>
+												<li><a href="#">User Interface Design</a>
 												</li>
-											</ul> <a href="project/r-net/index.html" class="full-link"></a>
+											</ul> <a href="#" class="full-link"></a>
 										</div>
 									</div>
 									<div class="btn-arrow">
 										<div class="icon"></div>
-									</div> <a href="project/r-net/index.html" class="full-link"></a>
+									</div> <a href="#" class="full-link"></a>
 								</div>
 							</div>
 						</div>
@@ -1361,18 +1361,18 @@
 										<div class="text-wrap tilter__caption">
 											<h4><span>TRILUX, simplify your light</span> Start met LiveLink</h4>
 											<ul>
-												<li><a href="actie-website/index.html">Actie website</a></li>
-												<li><a href="direct-mail-campagne/index.html">Direct Mail Campagne</a>
+												<li><a href="#">Actie website</a></li>
+												<li><a href="#">Direct Mail Campagne</a>
 												</li>
-												<li><a href="ux-design/index.html">User Experience Design</a></li>
-												<li><a href="user-interface-design/index.html">User Interface Design</a>
+												<li><a href="#">User Experience Design</a></li>
+												<li><a href="#">User Interface Design</a>
 												</li>
-											</ul> <a href="project/trilux-livelink/index.html" class="full-link"></a>
+											</ul> <a href="#" class="full-link"></a>
 										</div>
 									</div>
 									<div class="btn-arrow">
 										<div class="icon"></div>
-									</div> <a href="project/trilux-livelink/index.html" class="full-link"></a>
+									</div> <a href="#" class="full-link"></a>
 								</div>
 							</div>
 						</div>
