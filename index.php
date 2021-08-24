@@ -1231,15 +1231,14 @@
 											src="wp-content/uploads/2018/08/trilux-%e2%80%93-2%402x.png" /></div>
 									<div class="text-outer-wrap">
 										<div class="text-wrap tilter__caption">
-											<h4><span>TRILUX, Simplify your light</span> Speed of Light</h4>
+											<h4><span>Hyphenx</span> Eatery</h4>
 											<ul>
-												<li><a href="#">Actie website</a></li>
-												<li><a href="#">Direct Mail Campagne</a>
-												</li>
-												<li><a href="#">User Experience Design</a></li>
-												<li><a href="#">User Interface Design</a>
-												</li>
-											</ul> <a href="#"
+												<li><a href="#">Plataforma de control</a></li>
+												<li><a href="#">Sistema de inventariado</a></li>
+												<li><a href="#">Control de stock</a></li>
+												<li><a href="#">Respaldo en la nube</a></li>
+												<li><a href="#">Menús interactivos</a></li>
+											</ul> <a href="speed-of-light/index.html"
 												class="full-link" target="_blank"></a>
 										</div>
 									</div>
@@ -1260,11 +1259,12 @@
 											src="wp-content/uploads/2018/08/trilux-%e2%80%93-2%402x.png" /></div>
 									<div class="text-outer-wrap">
 										<div class="text-wrap tilter__caption">
-											<h4><span>TRILUX</span> Voor de Installateur</h4>
+											<h4><span>Hyphenx</span> Quickstall</h4>
 											<ul>
-												<li><a href="#">User Experience Design</a></li>
-												<li><a href="#">User Interface Design</a>
-												</li>
+												<li><a href="#">Soporte técnico</a></li>
+												<li><a href="#">Armado de computadores</a>
+												<li><a href="#">Estructuración de setups</a></li>
+												<li><a href="#">Modding profesional</a></li>
 											</ul> <a href="#"
 												class="full-link"></a>
 										</div>
@@ -1286,12 +1286,12 @@
 											src="wp-content/uploads/2018/08/brezan-%e2%80%93-2%402x.png" /></div>
 									<div class="text-outer-wrap">
 										<div class="text-wrap tilter__caption">
-											<h4><span>Brezan</span> Online branding en website</h4>
+											<h4><span>Hyphenx</span> Graphsign</h4>
 											<ul>
-												<li><a href="#">Corporate website</a></li>
-												<li><a href="#">User Interface Design</a>
-												</li>
-												<li><a href="#">User Experience Design</a></li>
+												<li><a href="#">Diseño gráfico profesional</a></li>
+												<li><a href="#">Piezas visuales para redes sociales</a></li>
+												<li><a href="#">Logos ultra detallados</a></li>
+												<li><a href="#">Marca personal gráfica</a></li>
 											</ul> <a href="#" class="full-link"></a>
 										</div>
 									</div>
@@ -1311,10 +1311,13 @@
 											src="wp-content/uploads/2018/08/anva-%e2%80%93-2%402x.png" /></div>
 									<div class="text-outer-wrap">
 										<div class="text-wrap tilter__caption">
-											<h4><span>ANVA</span> Corporate Magazine voor klanten en prospects</h4>
+											<h4><span>Hyphenx</span> Codelabs</h4>
 											<ul>
-												<li><a href="#">Corporate magazines</a>
-												</li>
+												<li><a href="#">Desarrollo de software profesional</a></li>
+												<li><a href="#">Páginas Web a medida</a></li>
+												<li><a href="#">Aplicaciones móviles</a></li>
+												<li><a href="#">Sistemas empresariales</a></li>
+												<li><a href="#">Intranets</a></li>
 											</ul> <a href="#" class="full-link"></a>
 										</div>
 									</div>
@@ -1334,12 +1337,13 @@
 											src="wp-content/uploads/2018/08/rnet-%e2%80%93-2%402x.png" /></div>
 									<div class="text-outer-wrap">
 										<div class="text-wrap tilter__caption">
-											<h4><span>R-net</span> Website voor reizigers</h4>
+											<h4><span>Hyphenx</span> Lively</h4>
 											<ul>
-												<li><a href="#">Corporate website</a></li>
-												<li><a href="#">User Experience Design</a></li>
-												<li><a href="#">User Interface Design</a>
-												</li>
+												<li><a href="#">Animaciones profesionales</a></li>
+												<li><a href="#">Interfaces de usuario inovadoras</a></li>
+												<li><a href="#">Experiencias de usuario fluidas</a></li>
+												<li><a href="#">Streaming hud detallado</a></li>
+												<li><a href="#">Renderizado 3D</a></li>
 											</ul> <a href="#" class="full-link"></a>
 										</div>
 									</div>
@@ -1359,7 +1363,7 @@
 											src="wp-content/uploads/2018/08/trilux-%e2%80%93-2%402x.png" /></div>
 									<div class="text-outer-wrap">
 										<div class="text-wrap tilter__caption">
-											<h4><span>TRILUX, simplify your light</span> Start met LiveLink</h4>
+											<h4><span>Hyphenx</span> Smarthings</h4>
 											<ul>
 												<li><a href="#">Actie website</a></li>
 												<li><a href="#">Direct Mail Campagne</a>
